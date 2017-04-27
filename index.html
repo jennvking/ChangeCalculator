@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Change Calculator</h1>
+
+  <div id="main" class="workPlease">
+
+    <!-- Text input-->
+    <div id="totalProdSale" class="form-group">
+      <h2>Total Sale Price</h2>
+      <div class="col-md-4">
+        <input id="totalSale" name="totalSale" type="number" placeholder="00.00" class="input">
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div id="totalTender" class="form-group">
+      <h2>Total Customer Tender</h2>
+      <div class="col-md-4">
+        <input id="totalCustomerTender" name="totalCustomerTender" type="number" placeholder="00.00" class="input">
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div id="calcButton" class="form-group">
+      <label class="col-md-4 control-label" for="button"></label>
+      <div class="col-md-4">
+        <button id="button" name="button" class="btn btn-primary">Calculate Change</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="answers" class="workPlease">
+    <p id="totalOutput"></p>
+    <p id="totalDollars" class="outs"></p>
+    <p id="totalQuarters" class="outs"></p>
+    <p id="totalDimes" class="outs"></p>
+    <p id="totalNickels" class="outs"></p>
+    <p id="totalPennies" class="outs"></p>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
